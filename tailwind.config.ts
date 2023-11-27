@@ -31,6 +31,8 @@ const config: Config = {
           950: "#171a4f",
         },
         muted: "#494949",
+        label: "#605F5F",
+        danger: "#FF543E",
       },
       boxShadow: {
         button: "-6px 6px 11px 0px rgba(0, 0, 0, 0.25)",
