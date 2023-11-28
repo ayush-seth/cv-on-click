@@ -1,5 +1,8 @@
+"use client";
+
 import logo from "@/app/logo.png";
 import { DashboardHeader } from "@/components/dashboard-header";
+import { cn } from "@/lib/utils";
 import {
   IconBook2,
   IconCreditCard,
@@ -8,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
 export const navigation = [
@@ -34,6 +38,8 @@ export const navigation = [
 ];
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+
   return (
     <div className="h-full">
       {/* Sidebar for desktop */}
@@ -45,7 +51,12 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           {navigation.map((nav) => (
             <Link
               key={nav.name}
-              className="flex items-center gap-4 px-4 py-3 first:bg-primary-200 hover:bg-primary-100"
+              className={cn(
+                "flex items-center gap-4 px-4 py-3",
+                pathname === nav.href
+                  ? "bg-primary-200"
+                  : "hover:bg-primary-100",
+              )}
               href={nav.href}
             >
               <nav.icon />
