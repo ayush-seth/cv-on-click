@@ -1,6 +1,9 @@
+"use client";
+
 import { ResumeEmptyState } from "@/components/resume-empty-state";
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography-h2";
+import { Menu } from "@headlessui/react";
 import {
   IconDotsVertical,
   IconDownload,
@@ -23,9 +26,33 @@ export default function ResumePage() {
             <div className="h-60 w-44 rounded-sm border-[0.2px] border-black bg-yellow-100"></div>
             <div className="space-y-4 lg:flex lg:items-center lg:justify-between lg:space-y-0">
               <span className="font-semibold text-muted">{resume.name}</span>
-              <button className="hidden lg:block" type="button">
-                <IconDotsVertical size={20} />
-              </button>
+              <Menu as="div" className="relative hidden lg:block">
+                <Menu.Button>
+                  <button className="hidden lg:block" type="button">
+                    <IconDotsVertical size={20} />
+                  </button>
+                </Menu.Button>
+                <Menu.Items className="absolute right-0 w-44 rounded-lg border bg-white shadow-xl">
+                  <Menu.Item>
+                    <button
+                      className="flex w-full items-center gap-4 px-3 py-2 text-sm hover:bg-gray-100"
+                      type="button"
+                    >
+                      <IconEdit />
+                      Edit
+                    </button>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <button
+                      className="flex w-full items-center gap-4 px-3 py-2 text-sm text-primary-500 hover:bg-gray-100"
+                      type="button"
+                    >
+                      <IconDownload />
+                      Download
+                    </button>
+                  </Menu.Item>
+                </Menu.Items>
+              </Menu>
               <button
                 className="flex items-center gap-4 text-sm lg:hidden"
                 type="button"

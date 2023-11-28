@@ -10,8 +10,10 @@ export default function AccountPage() {
         <Input label={"Full Name"} />
         <Input label={"Date Of Birth"} />
         <Input label={"Gender"} />
-        <Input label={"Email"} />
-        <Button className="lg:">Save</Button>
+        <Input label={"Email"} disabled />
+        <Button className="w-full lg:col-start-2 lg:ml-auto lg:w-40">
+          Save
+        </Button>
       </div>
     </div>
   );
