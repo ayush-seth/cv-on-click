@@ -8,6 +8,7 @@ export const Input: FC<InputProps> = ({
   label,
   className,
   required,
+
   ...rest
 }) => {
   return (
@@ -22,7 +23,7 @@ export const Input: FC<InputProps> = ({
       <input
         type="text"
         id={label}
-        className="mt-2.5 block w-full rounded-md p-3 ring-[0.5px] ring-inset ring-label focus:ring-1 focus:ring-primary-600"
+        className="mt-2.5 block w-full rounded-md p-3 ring-[0.5px] ring-inset ring-label focus:ring-1 focus:ring-primary-600 disabled:opacity-40"
         required={required}
         {...rest}
       />
