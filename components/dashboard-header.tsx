@@ -44,6 +44,7 @@ export const DashboardHeader: FC = () => {
                           key={item.name}
                           className="flex items-center gap-4 px-6 py-3 hover:bg-primary-100"
                           href={item.href}
+                          onClick={() => setSidebarOpen(false)}
                         >
                           <item.icon />
                           {item.name}
@@ -58,7 +59,7 @@ export const DashboardHeader: FC = () => {
         </Dialog>
       </Transition.Root>
 
-      <div className="sticky top-0 z-40 flex items-center justify-between p-6 lg:hidden">
+      <div className="sticky top-0 z-40 flex items-center justify-between bg-white p-6 lg:hidden">
         <Image className="h-8 w-auto" src={logo} alt="" />
 
         <button type="button" onClick={() => setSidebarOpen(true)}>

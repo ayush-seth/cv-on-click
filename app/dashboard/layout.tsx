@@ -35,7 +35,7 @@ export const navigation = [
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   return (
-    <div>
+    <div className="h-full">
       {/* Sidebar for desktop */}
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:block lg:w-60 lg:overflow-y-auto lg:bg-sidebar">
         <div className="h-16 p-6">
@@ -56,7 +56,9 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
       </div>
       {/* Header and side menu for mobile*/}
       <DashboardHeader />
-      <main className="lg:ml-60">{children}</main>
+      <main className="h-[calc(100%-80px)] overflow-y-auto lg:ml-60">
+        {children}
+      </main>
     </div>
   );
 }
