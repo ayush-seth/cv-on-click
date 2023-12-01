@@ -18,7 +18,7 @@ export default function AccountPage() {
           label={"Email"}
           disabled
           data-tooltip-id="email-tooltip"
-          data-tooltip-content="If you wish to change the Email id please contact us and will assist you with the same."
+          data-tooltip-content="If you wish to change the email id please contact us and will assist you with the same."
           data-tooltip-place="bottom-start"
         />
         <Tooltip

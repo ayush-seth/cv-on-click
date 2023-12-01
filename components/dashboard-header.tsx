@@ -59,7 +59,7 @@ export const DashboardHeader: FC = () => {
         </Dialog>
       </Transition.Root>
 
-      <div className="sticky top-0 z-40 flex items-center justify-between bg-white p-6 lg:hidden">
+      <div className="top-0 z-40 flex items-center justify-between bg-white p-6 lg:hidden">
         <Image className="h-8 w-auto" src={logo} alt="" />
 
         <button type="button" onClick={() => setSidebarOpen(true)}>
