@@ -1,41 +1,15 @@
 "use client";
 
 import logo from "@/app/logo.png";
-import { DashboardHeader } from "@/components/dashboard-header";
-import { cn } from "@/lib/utils";
 import {
-  IconBook2,
-  IconCreditCard,
-  IconFileText,
-  IconUser,
-} from "@tabler/icons-react";
+  DashboardHeader,
+  navigationItems,
+} from "@/components/dashboard-header";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
-
-export const navigation = [
-  {
-    name: "My Resume",
-    href: "/dashboard/resume",
-    icon: IconFileText,
-  },
-  {
-    name: "Career",
-    href: "/dashboard/career",
-    icon: IconBook2,
-  },
-  {
-    name: "Payment",
-    href: "/dashboard/payments",
-    icon: IconCreditCard,
-  },
-  {
-    name: "Account",
-    href: "/dashboard/account",
-    icon: IconUser,
-  },
-];
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -48,7 +22,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           <Image className="h-8 w-auto" src={logo} alt="" />
         </div>
         <nav className="mt-6 flex flex-1 flex-col">
-          {navigation.map((nav) => (
+          {navigationItems.map((nav) => (
             <Link
               key={nav.name}
               className={cn(

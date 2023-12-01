@@ -1,12 +1,41 @@
 "use client";
 
-import { navigation } from "@/app/dashboard/layout";
 import logo from "@/app/logo.png";
 import { Dialog, Transition } from "@headlessui/react";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import {
+  IconBook2,
+  IconCreditCard,
+  IconFileText,
+  IconMenu2,
+  IconUser,
+  IconX,
+} from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, Fragment, useState } from "react";
+
+export const navigationItems = [
+  {
+    name: "My Resume",
+    href: "/dashboard/resume",
+    icon: IconFileText,
+  },
+  {
+    name: "Career",
+    href: "/dashboard/career",
+    icon: IconBook2,
+  },
+  {
+    name: "Payment",
+    href: "/dashboard/payments",
+    icon: IconCreditCard,
+  },
+  {
+    name: "Account",
+    href: "/dashboard/account",
+    icon: IconUser,
+  },
+];
 
 export const DashboardHeader: FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -38,7 +67,7 @@ export const DashboardHeader: FC = () => {
                 </div>
                 <nav className="flex flex-col">
                   <ul role="list">
-                    {navigation.map((item) => (
+                    {navigationItems.map((item) => (
                       <li key={item.name}>
                         <Link
                           key={item.name}
