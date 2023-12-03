@@ -1,6 +1,5 @@
 "use client";
 
-import logo from "@/app/logo.png";
 import {
   DashboardHeader,
   navigationItems,
@@ -10,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
+import logo from "./logo.png";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();

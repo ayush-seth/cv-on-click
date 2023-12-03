@@ -1,9 +1,9 @@
-import emptyState from "@/app/dashboard/resume/resume-empty-state.svg";
+import { Button } from "@/components/ui/button";
+import { TypographyH2 } from "@/components/ui/typography-h2";
+import { TypographyP } from "@/components/ui/typography-p";
 import Image from "next/image";
 import { FC } from "react";
-import { Button } from "./ui/button";
-import { TypographyH2 } from "./ui/typography-h2";
-import { TypographyP } from "./ui/typography-p";
+import emptyState from "../assets/resume-empty-state.svg";
 
 export const ResumeEmptyState: FC = () => {
   return (

@@ -1,12 +1,12 @@
 "use client";
 
+import { TypographyH2 } from "@/components/ui/typography-h2";
+import { TypographyP } from "@/components/ui/typography-p";
 import { IconArrowRight } from "@tabler/icons-react";
 import Image, { StaticImageData } from "next/image";
-import { TypographyH2 } from "../../ui/typography-h2";
-import { TypographyP } from "../../ui/typography-p";
-import feature1 from "./feature-1.png";
-import feature2 from "./feature-2.png";
-import feature3 from "./feature-3.png";
+import feature1 from "../assets/feature-1.png";
+import feature2 from "../assets/feature-2.png";
+import feature3 from "../assets/feature-3.png";
 
 type Feature = {
   heading: string;

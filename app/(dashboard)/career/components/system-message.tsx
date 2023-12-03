@@ -1,12 +1,11 @@
-import avatar from "@/app/dashboard/career/system-avatar.png";
 import Image from "next/image";
-import { FC } from "react";
+import avatar from "../assets/system-avatar.png";
 
 type SystemMessageProps = {
   text: string;
 };
 
-export const SystemMessage: FC<SystemMessageProps> = ({ text }) => {
+export function SystemMessage({ text }: SystemMessageProps) {
   return (
     <div className="flex items-center gap-4">
       <Image className="h-12 w-12" src={avatar} alt="" />
@@ -15,4 +14,4 @@ export const SystemMessage: FC<SystemMessageProps> = ({ text }) => {
       </p>
     </div>
   );
-};
+}

@@ -1,6 +1,6 @@
-import { PaymentHistoryCard } from "@/components/payment-history-card";
-import { Table } from "@/components/table";
 import { TypographyH2 } from "@/components/ui/typography-h2";
+import { PaymentHistoryCard } from "./components/payment-history-card";
+import { Table } from "./components/table";
 
 export default function PaymentPage() {
   return (

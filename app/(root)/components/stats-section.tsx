@@ -1,9 +1,9 @@
+import { TypographyH2 } from "@/components/ui/typography-h2";
+import { TypographyP } from "@/components/ui/typography-p";
 import Image from "next/image";
-import { TypographyH2 } from "../../ui/typography-h2";
-import { TypographyP } from "../../ui/typography-p";
-import blob1 from "./blob-1.svg";
-import blob2 from "./blob-2.svg";
-import blob3 from "./blob-3.svg";
+import blob1 from "../assets/blob-1.svg";
+import blob2 from "../assets/blob-2.svg";
+import blob3 from "../assets/blob-3.svg";
 
 export function StatsSection() {
   return (

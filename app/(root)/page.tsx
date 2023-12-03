@@ -1,7 +1,7 @@
-import { FeatureSection } from "@/components/landing-page/feature-section/feature-section";
-import { HeroSection } from "@/components/landing-page/hero-section/hero-section";
-import { ReviewSection } from "@/components/landing-page/review-section/review-section";
-import { StatsSection } from "@/components/landing-page/stats-section/stats-section";
+import { FeatureSection } from "@/app/(root)/components/feature-section";
+import { HeroSection } from "@/app/(root)/components/hero-section";
+import { ReviewSection } from "@/app/(root)/components/review-section";
+import { StatsSection } from "@/app/(root)/components/stats-section";
 
 export default function Home() {
   return (

@@ -1,8 +1,8 @@
+import { Button } from "@/components/ui/button";
+import { TypographyH1 } from "@/components/ui/typography-h1";
+import { TypographyP } from "@/components/ui/typography-p";
 import Image from "next/image";
-import { Button } from "../../ui/button";
-import { TypographyH1 } from "../../ui/typography-h1";
-import { TypographyP } from "../../ui/typography-p";
-import heroImg from "./hero.png";
+import heroImg from "../assets/hero.png";
 
 export function HeroSection() {
   return (

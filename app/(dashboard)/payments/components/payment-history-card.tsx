@@ -1,6 +1,4 @@
-import { FC } from "react";
-
-export const PaymentHistoryCard: FC = () => {
+export function PaymentHistoryCard() {
   return (
     <div className="rounded-lg border-[0.2px] border-black p-5">
       <div className="grid grid-cols-2 text-muted">
@@ -23,4 +21,4 @@ export const PaymentHistoryCard: FC = () => {
       </div>
     </div>
   );
-};
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "@/app/logo.png";
+import logo from "@/app/(dashboard)/logo.png";
 import { Dialog, Transition } from "@headlessui/react";
 import {
   IconBook2,
@@ -12,7 +12,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, Fragment, useState } from "react";
+import { Fragment, useState } from "react";
 
 export const navigationItems = [
   {
@@ -37,7 +37,7 @@ export const navigationItems = [
   },
 ];
 
-export const DashboardHeader: FC = () => {
+export function DashboardHeader() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -97,4 +97,4 @@ export const DashboardHeader: FC = () => {
       </div>
     </>
   );
-};
+}

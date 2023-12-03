@@ -1,13 +1,13 @@
-import banner from "@/app/dashboard/career/banner.png";
-import { Suggestion } from "@/components/suggestion";
-import { SystemMessage } from "@/components/system-message";
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography-h2";
 import { TypographyP } from "@/components/ui/typography-p";
-import { UserMessage } from "@/components/user-message";
 import { IconSend } from "@tabler/icons-react";
 import Image from "next/image";
-import emptyState from "./career-empty-state.svg";
+import banner from "./assets/banner.png";
+import emptyState from "./assets/career-empty-state.svg";
+import { Suggestion } from "./components/suggestion";
+import { SystemMessage } from "./components/system-message";
+import { UserMessage } from "./components/user-message";
 
 let questionsRemaining = 5;
 
@@ -25,7 +25,7 @@ export default function CareerPage() {
       <Button className="mt-8 px-8">Create Now</Button>
     </div>
   ) : (
-    <div className="flex h-full flex-col gap-6 bg-gray-100">
+    <div className="h-full bg-gray-100">
       <Image className="h-20 w-full lg:h-36" src={banner} alt="" />
       <div className="flex flex-col gap-14 p-4 lg:p-10">
         <div className="flex flex-col gap-6 ">

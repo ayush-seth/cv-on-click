@@ -1,6 +1,6 @@
 "use client";
 
-import { ResumeEmptyState } from "@/components/resume-empty-state";
+import { ResumeEmptyState } from "@/app/(dashboard)/resume/components/resume-empty-state";
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography-h2";
 import { Menu } from "@headlessui/react";
