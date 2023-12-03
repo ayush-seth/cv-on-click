@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1.25rem",
+        lg: "2rem",
+      },
     },
     fontFamily: {
       inter: ["var(--font-inter)", "sans-serif"],

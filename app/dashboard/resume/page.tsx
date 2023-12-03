@@ -15,7 +15,7 @@ const resumes = [{ name: "Resume 1" }, { name: "Resume 2" }];
 
 export default function ResumePage() {
   return resumes.length > 0 ? (
-    <div className="p-6">
+    <div className="p-6 lg:p-16">
       <TypographyH2 className="mb-6">My CV/Resume</TypographyH2>
       <div className="space-y-9 lg:flex lg:flex-wrap lg:gap-16 lg:space-y-0">
         {resumes.map((resume) => (
