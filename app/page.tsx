@@ -5,7 +5,7 @@ import { StatsSection } from "@/components/landing-page/stats-section/stats-sect
 
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <HeroSection />
       <StatsSection />
       <FeatureSection />
@@ -48,6 +48,6 @@ export default function Home() {
           />
         </div>
       </div> */}
-    </>
+    </div>
   );
 }

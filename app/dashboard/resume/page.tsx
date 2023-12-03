@@ -27,10 +27,8 @@ export default function ResumePage() {
             <div className="space-y-4 lg:flex lg:items-center lg:justify-between lg:space-y-0">
               <span className="font-semibold text-muted">{resume.name}</span>
               <Menu as="div" className="relative hidden lg:block">
-                <Menu.Button>
-                  <button className="hidden lg:block" type="button">
-                    <IconDotsVertical size={20} />
-                  </button>
+                <Menu.Button className="hidden lg:block" type="button">
+                  <IconDotsVertical size={20} />
                 </Menu.Button>
                 <Menu.Items className="absolute right-0 w-44 rounded-lg border bg-white shadow-xl">
                   <Menu.Item>
