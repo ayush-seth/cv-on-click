@@ -1,43 +1,23 @@
 "use client";
 
-import logo from "@/app/(dashboard)/logo.png";
+import logo from "@/app/(root)/assets/logo.png";
 import { Dialog, Transition } from "@headlessui/react";
-import {
-  IconBook2,
-  IconCreditCard,
-  IconFileText,
-  IconMenu2,
-  IconUser,
-  IconX,
-} from "@tabler/icons-react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment, ReactNode, useState } from "react";
 
-export const navigationItems = [
-  {
-    name: "My Resume",
-    href: "/dashboard/resume",
-    icon: IconFileText,
-  },
-  {
-    name: "Career",
-    href: "/dashboard/career",
-    icon: IconBook2,
-  },
-  {
-    name: "Payment",
-    href: "/dashboard/payments",
-    icon: IconCreditCard,
-  },
-  {
-    name: "Account",
-    href: "/dashboard/account",
-    icon: IconUser,
-  },
-];
+export type NavItem = {
+  name: string;
+  href: string;
+  icon: ReactNode;
+};
 
-export function DashboardHeader() {
+type MobileHeaderProps = {
+  nav: NavItem[];
+};
+
+export function MobileHeader({ nav }: MobileHeaderProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -67,16 +47,16 @@ export function DashboardHeader() {
                 </div>
                 <nav className="flex flex-col">
                   <ul role="list">
-                    {navigationItems.map((item) => (
-                      <li key={item.name}>
+                    {nav.map(({ name, href, icon }) => (
+                      <li key={name}>
                         <Link
-                          key={item.name}
+                          key={name}
                           className="flex items-center gap-4 px-6 py-3 hover:bg-primary-100"
-                          href={item.href}
+                          href={href}
                           onClick={() => setSidebarOpen(false)}
                         >
-                          <item.icon />
-                          {item.name}
+                          {icon}
+                          {name}
                         </Link>
                       </li>
                     ))}

@@ -23,7 +23,7 @@ export function ReviewSection() {
           {reviews.map(({ review, rating, author }, i) => (
             <div
               key={i}
-              className="shrink-0 basis-full px-8 lg:basis-1/2 xl:basis-1/3"
+              className="shrink-0 basis-full px-2 lg:basis-1/2 lg:px-8 xl:basis-1/3"
             >
               <div className="flex flex-col items-center gap-5 border p-8 shadow-lg shadow-slate-300">
                 <div className="flex gap-2 text-blue-500">

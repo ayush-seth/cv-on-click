@@ -11,7 +11,7 @@ const config: Config = {
       center: true,
       padding: {
         DEFAULT: "1.25rem",
-        lg: "2rem",
+        lg: "4rem",
       },
     },
     fontFamily: {

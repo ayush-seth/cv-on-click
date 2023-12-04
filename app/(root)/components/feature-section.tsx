@@ -46,7 +46,7 @@ export function FeatureSection() {
         {features.map(({ heading, description, image }) => (
           <div
             key={heading}
-            className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-around lg:gap-12 lg:odd:flex-row-reverse"
+            className="flex flex-col items-center lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:odd:flex-row-reverse"
           >
             <div className="max-w-xl space-y-4">
               <TypographyH2>{heading}</TypographyH2>
