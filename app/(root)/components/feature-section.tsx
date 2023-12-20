@@ -19,13 +19,13 @@ const features: Feature[] = [
   {
     heading: "Save time by filling minimum details",
     description:
-      "Speed up your resume building with just the basics, for a quick and polished professional document in no time.",
+      "Speed up your CV building with just the basics, for a quick and polished professional document in no time.",
     image: feature1,
   },
   {
-    heading: "Assured top ATS score for your resume",
+    heading: "Assured top ATS score for your CV",
     description:
-      "Boost your resume's ATS score for heightened visibility and improved chances with employers.",
+      "Secure a top ATS score on your CV, significantly enhancing your chances of getting noticed by potential employers.",
     image: feature2,
   },
   {

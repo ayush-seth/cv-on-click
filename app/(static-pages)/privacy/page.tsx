@@ -10,10 +10,11 @@ export default function PrivacyPolicy() {
       </TypographyH1>
       <TypographyP>Effective Date: 20-12-2023</TypographyP>
       <TypographyP className="mt-8">
-        Thank you for choosing COC Career Services Private Limited , hereinafter
-        referred to as &quot;the Company.&quot; This Privacy Policy outlines how
-        we collect, use, disclose, and protect the personal information provided
-        by users of our CV generation and other career services.
+        Thank you for choosing CVONCALL Career Services Private Limited
+        (&quot;COC&quot;), hereinafter referred to as &quot;the Company.&quot;
+        This Privacy Policy outlines how we collect, use, disclose, and protect
+        the personal information provided by users of our CV generation and
+        other career services.
       </TypographyP>
 
       <section className="mt-10 space-y-16">

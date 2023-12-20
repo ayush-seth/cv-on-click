@@ -13,7 +13,7 @@ export function Banner() {
       }}
     >
       <TypographyH2 className="text-center">
-        Start building your resume to land your dream job
+        Start building your CV to land your dream job
       </TypographyH2>
       <Link href="/login">
         <Button>Get Started</Button>

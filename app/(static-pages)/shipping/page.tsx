@@ -7,7 +7,7 @@ export default function Shipping() {
   return (
     <>
       <TypographyH1 className="mb-6 border-b-2 border-black pb-4 lg:pb-8">
-        Shipping Policy
+        Shipping & Cancellation Policy
       </TypographyH1>
 
       <TypographyP>Last Updated: 20-12-2023</TypographyP>

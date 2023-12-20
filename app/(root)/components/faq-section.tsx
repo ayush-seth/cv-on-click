@@ -39,18 +39,18 @@ export function FAQSection() {
 
 const faqs = [
   {
-    question: "1. What is the process of creating AI resume? ",
+    question: "1. How does COC create a CV in just 2 minutes?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "COC utilizes an algorithm and innovative technology to extract key information from your profile swiftly. By minimizing the input required from users, we generate a comprehensive and professionally crafted CV in just 2 minutes.",
   },
   {
-    question: "2. How do add specific skills or experiences using AI? ",
+    question: "2. What information do I need to provide COC to generate my CV?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "You'll need to provide essential details such as your name, contact information, professional experience, education, and key skills. Our user-friendly platform ensures a quick and straightforward process.",
   },
   {
-    question: "3. How can I get assistance if I face any issues? ",
+    question: "3. Does COC offer additional Career Services?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Absolutely! COC is expanding its services to offer a range of career development features, including interview preparation, confidence-building resources, mentorship programs, and opportunities to showcase your skills for potential employers.",
   },
 ];

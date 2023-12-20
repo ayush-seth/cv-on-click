@@ -117,10 +117,11 @@ export default function Terms() {
             courts located in Lucknow.
           </TypographyP>
           <TypographyP>
-            By using the services of COC Career Services Private Limited, you
-            acknowledge that you have read, understood, and agreed to these
-            terms and conditions. If you do not agree with any part of these
-            terms, you may not use the Company&apos;s services.
+            By using the services of CVONCALL Career Services Private Limited
+            (&quot;COC&quot;), you acknowledge that you have read, understood,
+            and agreed to these terms and conditions. If you do not agree with
+            any part of these terms, you may not use the Company&apos;s
+            services.
           </TypographyP>
         </div>
       </section>
