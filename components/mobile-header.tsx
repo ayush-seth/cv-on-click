@@ -1,11 +1,10 @@
 "use client";
 
-import logo from "@/app/(root)/assets/logo.png";
 import { Dialog, Transition } from "@headlessui/react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
-import Image from "next/image";
 import Link from "next/link";
 import { Fragment, ReactNode, useState } from "react";
+import { Logo } from "./ui/logo";
 
 export type NavItem = {
   name: string;
@@ -40,7 +39,7 @@ export function MobileHeader({ nav }: MobileHeaderProps) {
             >
               <Dialog.Panel className="w-full overflow-y-auto bg-sidebar">
                 <div className="flex justify-between p-6">
-                  <Image className="h-8 w-auto" src={logo} alt="" />
+                  <Logo />
                   <button type="button" onClick={() => setSidebarOpen(false)}>
                     <IconX />
                   </button>
@@ -69,8 +68,7 @@ export function MobileHeader({ nav }: MobileHeaderProps) {
       </Transition.Root>
 
       <div className="top-0 z-40 flex items-center justify-between bg-white p-6 lg:hidden">
-        <Image className="h-8 w-auto" src={logo} alt="" />
-
+        <Logo />
         <button type="button" onClick={() => setSidebarOpen(true)}>
           <IconMenu2 />
         </button>

@@ -1,8 +1,7 @@
 import { MobileHeader, NavItem } from "@/components/mobile-header";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
-import logo from "../assets/logo.png";
 
 const navigation: NavItem[] = [
   { name: "About", href: "/about", icon: null },
@@ -14,7 +13,7 @@ export function Header() {
   return (
     <div>
       <header className="hidden lg:container lg:flex lg:items-center lg:justify-between lg:py-6">
-        <Image src={logo} className="h-8 w-auto" alt="" />
+        <Logo />
         <nav className="flex items-center gap-20">
           {navigation.map(({ name, href }) => (
             <Link key={name} href={href}>
