@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography-h2";
+import Link from "next/link";
 import banner from "../assets/banner.png";
 
 export function Banner() {
@@ -14,7 +15,9 @@ export function Banner() {
       <TypographyH2 className="text-center">
         Start building your resume to land your dream job
       </TypographyH2>
-      <Button>Get Started</Button>
+      <Link href="/login">
+        <Button>Get Started</Button>
+      </Link>
     </div>
   );
 }

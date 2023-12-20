@@ -4,6 +4,7 @@ import { TypographyH2 } from "@/components/ui/typography-h2";
 import { TypographyP } from "@/components/ui/typography-p";
 import { IconArrowRight } from "@tabler/icons-react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import feature1 from "../assets/feature-1.png";
 import feature2 from "../assets/feature-2.png";
 import feature3 from "../assets/feature-3.png";
@@ -51,9 +52,12 @@ export function FeatureSection() {
             <div className="max-w-xl space-y-4">
               <TypographyH2>{heading}</TypographyH2>
               <TypographyP>{description}</TypographyP>
-              <button className="hidden lg:flex lg:gap-1 lg:font-medium lg:text-primary-600 lg:hover:text-primary-800">
+              <Link
+                href="/login"
+                className="hidden lg:flex lg:gap-1 lg:font-medium lg:text-primary-600 lg:hover:text-primary-800"
+              >
                 Get started <IconArrowRight />
-              </button>
+              </Link>
             </div>
             <Image
               src={image}

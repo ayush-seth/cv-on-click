@@ -21,7 +21,9 @@ export function Header() {
             </Link>
           ))}
 
-          <Button>Get Started</Button>
+          <Link href="/login">
+            <Button>Get Started</Button>
+          </Link>
         </nav>
       </header>
       <MobileHeader nav={navigation} />
