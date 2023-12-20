@@ -1,11 +1,20 @@
-import logo from "@/app/(root)/assets/logo.png";
+import whiteLogo from "@/app/(root)/assets/logo-white.svg";
+import blackLogo from "@/app/(root)/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
-export function Logo() {
+type LogoProps = {
+  variant?: "black" | "white";
+};
+
+export function Logo({ variant }: LogoProps) {
   return (
     <Link href="/">
-      <Image src={logo} alt="" width={100} />
+      <Image
+        src={variant === "white" ? whiteLogo : blackLogo}
+        alt=""
+        width={100}
+      />
     </Link>
   );
 }
