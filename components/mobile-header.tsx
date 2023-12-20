@@ -39,7 +39,7 @@ export function MobileHeader({ nav }: MobileHeaderProps) {
             >
               <Dialog.Panel className="w-full overflow-y-auto bg-sidebar">
                 <div className="flex justify-between p-6">
-                  <Logo />
+                  <Logo className="w-32" />
                   <button type="button" onClick={() => setSidebarOpen(false)}>
                     <IconX />
                   </button>
@@ -68,7 +68,7 @@ export function MobileHeader({ nav }: MobileHeaderProps) {
       </Transition.Root>
 
       <div className="top-0 z-40 flex items-center justify-between bg-white p-6 lg:hidden">
-        <Logo />
+        <Logo className="w-32" />
         <button type="button" onClick={() => setSidebarOpen(true)}>
           <IconMenu2 />
         </button>

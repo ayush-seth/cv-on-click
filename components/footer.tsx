@@ -22,7 +22,7 @@ export function Footer() {
         </div>
       </div>
       <div className="flex flex-col gap-14 bg-blue-600 py-8 pl-6 text-white md:grid md:grid-cols-3 md:justify-between">
-        <Logo variant="white" />
+        <Logo variant="white" className="w-32 lg:w-40" />
         <div className="flex flex-col gap-8 md:flex-row md:justify-center">
           <Link href="/about">About us</Link>
           <Link href="/contact">Contact us</Link>
