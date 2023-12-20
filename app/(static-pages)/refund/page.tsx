@@ -9,7 +9,7 @@ export default function Refund() {
         Refund Policy
       </TypographyH1>
 
-      <TypographyP>Last Updated: [Date]</TypographyP>
+      <TypographyP>Last Updated: 20-12-2023</TypographyP>
 
       <section className="mt-10 space-y-16">
         <div className="space-y-6">
@@ -82,8 +82,18 @@ export default function Refund() {
           <TypographyH2>6. Contact Information:</TypographyH2>
           <TypographyP>
             If you have any questions or concerns about our refund policy,
-            please contact us at: CVONCALL Career Services Private Limited
-            [Address] [Email] [Phone]
+            please contact us at:
+            <br />
+            <br />
+            CVONCALL Career Services Private Limited
+            <br />
+            <strong>Communication Address:</strong> HD-171, WeWork Pavilion,
+            62/63 The Pavilion, Church Street, Bangalore, Karnataka 560001
+            <br />
+            <strong>Email:</strong>{" "}
+            <a href="mailto:support@yourcoc.com" className="underline">
+              support@yourcoc.com
+            </a>
           </TypographyP>
         </div>
         <div className="space-y-6">

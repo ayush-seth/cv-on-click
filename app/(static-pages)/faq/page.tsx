@@ -38,43 +38,42 @@ export default function FAQ() {
 
 const faqs = [
   {
-    question: "1. What is COC? ",
+    question: "1. What is COC?",
     answer:
       "COC is a cutting-edge career services company that specializes in creating professional Curriculum Vitae (CV) for candidates in just 60 seconds. Our unique platform leverages advanced technology to streamline the CV creation process, making it quick, easy, and efficient.",
   },
   {
-    question: "2. How does COC create a CV in just 0 to 5 minutes? ",
+    question: "2. How does COC create a CV in just 2 minutes?",
     answer:
-      "COC utilizes an algorithm and innovative technology to extract key information from your profile swiftly. By minimizing the input required from users, we generate a comprehensive and professionally crafted CV in just 0 to 5 minutes. ",
+      "COC utilizes an algorithm and innovative technology to extract key information from your profile swiftly. By minimizing the input required from users, we generate a comprehensive and professionally crafted CV in just 2 minutes.",
   },
   {
-    question:
-      "3. What information do I need to provide COC to generate my CV? ",
+    question: "3. What information do I need to provide COC to generate my CV?",
     answer:
       "You'll need to provide essential details such as your name, contact information, professional experience, education, and key skills. Our user-friendly platform ensures a quick and straightforward process.",
   },
   {
-    question: "4. Is my information secure with COC? ",
+    question: "4. Is my information secure with COC?",
     answer:
       "Yes, absolutely. We prioritize the security and privacy of your information. COC adheres to strict data protection measures, and your personal details are handled with the utmost confidentiality. For more details, please refer to our Privacy Policy.",
   },
   {
-    question: "5. Can I download my CV after it's generated? ",
+    question: "5. Can I download my CV after it's generated?",
     answer:
       "Yes, once your CV is generated, you'll get an email carrying the option to download the same.. The download option is also available on your dashboard as well after the CV creation process is complete.",
   },
   {
-    question: "6. Does COC offer additional career services? ",
+    question: "6. Does COC offer additional Career Services?",
     answer:
       "Absolutely! COC is expanding its services to offer a range of career development features, including interview preparation, confidence-building resources, mentorship programs, and opportunities to showcase your skills for potential employers.",
   },
   {
-    question: "7. How can I get in touch with COC for support or inquiries? ",
+    question: "7. How can I get in touch with COC for support or inquiries?",
     answer:
-      "For any assistance or inquiries, feel free to contact our support team at COC Contact Information . We're here to help and ensure you have a seamless experience with COC Career Services.",
+      "For any assistance or inquiries, feel free to contact our support team at support@yourcoc.com. We're here to help and ensure you have a seamless experience with COC Career Services.",
   },
   {
-    question: "8. Is COC available only in certain regions? ",
+    question: "8. Is COC available only in certain regions?",
     answer:
       "No, COC's services are available to professionals across India. Our platform is designed to cater to individuals seeking to enhance their career prospects, regardless of their location.",
   },

@@ -14,7 +14,7 @@ export function StatsSection() {
           className="absolute left-[60%] -z-10 h-6 w-6 lg:h-10 lg:w-10"
           alt=""
         />
-        <TypographyH2>+65%</TypographyH2>
+        <TypographyH2>+88%</TypographyH2>
         <TypographyP className="text-xs lg:text-base">
           Better chance of getting hired
         </TypographyP>
@@ -25,9 +25,9 @@ export function StatsSection() {
           className="absolute left-[60%] -z-10 h-6 w-6 lg:h-10 lg:w-10"
           alt=""
         />
-        <TypographyH2>60%</TypographyH2>
+        <TypographyH2>100%</TypographyH2>
         <TypographyP className="text-xs lg:text-base">
-          Reduces thinking by 60%
+          Error free CV
         </TypographyP>
       </div>
       <div className="relative space-y-1 text-center">
@@ -38,7 +38,7 @@ export function StatsSection() {
         />
         <TypographyH2>60 sec</TypographyH2>
         <TypographyP className="text-xs lg:text-base">
-          Average time to create a resume
+          Average time to create a CV
         </TypographyP>
       </div>
     </div>

@@ -9,7 +9,7 @@ export function HeroSection() {
     <div className="lg:flex lg:items-center lg:gap-8">
       <div className="space-y-6">
         <TypographyH1 className="text-center lg:text-left">
-          Craft an easy, affordable resume effortlessly in just 60 seconds.
+          Craft an effective, affordable CV effortlessly in just 2 minutes!
         </TypographyH1>
         <TypographyP className="text-center lg:text-left">
           Transform your career seamlessly with our best practices—secure your

@@ -1,6 +1,7 @@
 import { TypographyH1 } from "@/components/ui/typography-h1";
 import { TypographyH2 } from "@/components/ui/typography-h2";
 import { TypographyP } from "@/components/ui/typography-p";
+import Link from "next/link";
 
 export default function Shipping() {
   return (
@@ -9,7 +10,7 @@ export default function Shipping() {
         Shipping Policy
       </TypographyH1>
 
-      <TypographyP>Last Updated: [Date]</TypographyP>
+      <TypographyP>Last Updated: 20-12-2023</TypographyP>
 
       <section className="mt-10 space-y-16">
         <div className="space-y-6">
@@ -67,19 +68,44 @@ export default function Shipping() {
           <TypographyP>
             If clients encounter any issues with service delivery or have
             questions about the process, they can contact our customer support
-            team at: CVONCALL Career Services Private Limited [Address] [Email]
-            [Phone]
+            team at:
+            <br />
+            <br />
+            CVONCALL Career Services Private Limited
+            <br />
+            <strong>Communication Address:</strong> HD-171, WeWork Pavilion,
+            62/63 The Pavilion, Church Street, Bangalore, Karnataka 560001
+            <br />
+            <strong>Email:</strong>{" "}
+            <a href="mailto:support@yourcoc.com" className="underline">
+              support@yourcoc.com
+            </a>
           </TypographyP>
         </div>
         <div className="space-y-6">
           <TypographyH2>6. Refunds:</TypographyH2>
           <TypographyP>
-            Please refer to our Refund Policy for information on refunds related
-            to service delivery.
+            Please refer to our{" "}
+            <Link href="/refund" className="underline">
+              Refund Policy
+            </Link>{" "}
+            for information on refunds related to service delivery.
           </TypographyP>
         </div>
         <div className="space-y-6">
-          <TypographyH2>7. Amendments to the Shipping Policy:</TypographyH2>
+          <TypographyH2>7. Cancellation Policy:</TypographyH2>
+          <TypographyP>
+            If you wish to cancel your order, please reach out to us at{" "}
+            <a href="mailto:support@yourcoc.com" className="underline">
+              support@yourcoc.com
+            </a>
+            . However, please note that cancellations do not automatically
+            qualify for refunds. Refunds are strictly governed by the conditions
+            mentioned in the refund policy.
+          </TypographyP>
+        </div>
+        <div className="space-y-6">
+          <TypographyH2>8. Amendments to the Shipping Policy:</TypographyH2>
           <TypographyP>
             COC reserves the right to update or modify this shipping policy at
             any time. Any changes will be effective immediately upon posting on
