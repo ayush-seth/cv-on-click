@@ -21,18 +21,20 @@ export function Footer() {
           <IconBrandX size={44} />
         </div>
       </div>
-      <div className="flex flex-col gap-14 bg-blue-600 pl-6 pt-8 text-white md:grid md:grid-cols-3 md:justify-between">
+      <div className="flex flex-col gap-14 bg-blue-600 py-8 pl-6 text-white md:grid md:grid-cols-3 md:justify-between">
         <Logo variant="white" />
         <div className="flex flex-col gap-8 md:flex-row md:justify-center">
           <Link href="/about">About us</Link>
           <Link href="/contact">Contact us</Link>
           <Link href="/faq">FAQ&apos;s</Link>
         </div>
-        <div className="flex flex-col gap-8 md:flex-row md:justify-end md:pr-10">
+        <div className="flex flex-col gap-8 md:col-start-3 md:row-start-2 md:grid md:grid-cols-2 md:gap-4 md:pr-10">
           <Link href="/terms">Terms of Use</Link>
           <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/refund">Refund Policy</Link>
+          <Link href="/shipping">Shipping Policy</Link>
         </div>
-        <div className="mb-14 flex flex-row gap-2">
+        <div className="flex flex-row gap-2 md:row-start-2 md:self-end">
           <IconCopyright />
           <p>COC. All rights reserved</p>
         </div>
