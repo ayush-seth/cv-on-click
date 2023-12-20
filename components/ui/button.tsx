@@ -13,7 +13,6 @@ export const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      type="button"
       className={cn(
         "flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-3.5 py-2.5 font-manrope font-semibold text-white transition-shadow duration-300 hover:shadow-button active:bg-primary-700",
         "lg:py-3.5",

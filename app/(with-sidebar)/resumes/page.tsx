@@ -1,6 +1,6 @@
 "use client";
 
-import { ResumeEmptyState } from "@/app/(dashboard)/resume/components/resume-empty-state";
+import { ResumeEmptyState } from "@/app/(with-sidebar)/resumes/components/resume-empty-state";
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography-h2";
 import { Menu } from "@headlessui/react";
@@ -10,6 +10,7 @@ import {
   IconEdit,
   IconPlus,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 const resumes = [{ name: "Resume 1" }, { name: "Resume 2" }];
 
@@ -68,8 +69,8 @@ export default function ResumePage() {
             </div>
           </div>
         ))}
-        <div className="hidden space-y-4 lg:block">
-          <div className="grid h-60 w-44 cursor-pointer place-items-center rounded-sm border-[0.2px] border-black bg-white">
+        <Link className="hidden space-y-4 lg:block" href="/resumes/new">
+          <div className="grid h-60 w-44 place-items-center rounded-sm border-[0.2px] border-black bg-white">
             <div className="relative h-20 w-20 rounded-full bg-[#C8C6FB]">
               <IconPlus
                 size={28}
@@ -80,8 +81,10 @@ export default function ResumePage() {
           <span className="block text-center font-semibold text-muted">
             Create New Resume
           </span>
-        </div>
-        <Button className="w-full lg:hidden">Create Now</Button>
+        </Link>
+        <Link href="/resumes/new">
+          <Button className="w-full lg:hidden">Create Now</Button>
+        </Link>
       </div>
     </div>
   ) : (

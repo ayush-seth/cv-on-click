@@ -48,7 +48,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
 const navigationItems: NavItem[] = [
   {
     name: "My Resume",
-    href: "/resume",
+    href: "/resumes",
     icon: <IconFileText />,
   },
   {
