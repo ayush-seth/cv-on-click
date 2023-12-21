@@ -1,7 +1,7 @@
 "use client";
 
-import logo from "@/app/(root)/assets/logo.png";
 import { MobileHeader, NavItem } from "@/components/mobile-header";
+import { Logo } from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
 import {
   IconBook2,
@@ -9,7 +9,6 @@ import {
   IconFileText,
   IconUser,
 } from "@tabler/icons-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
@@ -21,7 +20,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     <div className="flex h-full flex-col">
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:block lg:w-60 lg:bg-sidebar">
         <div className="h-16 p-6">
-          <Image className="h-8 w-auto" src={logo} alt="" />
+          <Logo className="w-32" />
         </div>
         <nav className="mt-6 flex flex-1 flex-col">
           {navigationItems.map(({ name, href, icon }) => (
