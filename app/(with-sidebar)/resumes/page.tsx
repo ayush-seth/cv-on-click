@@ -82,8 +82,8 @@ export default function ResumePage() {
             Create New Resume
           </span>
         </Link>
-        <Link href="/resumes/new">
-          <Button className="w-full lg:hidden">Create Now</Button>
+        <Link href="/resumes/new" className="block lg:hidden">
+          <Button className="w-full">Create Now</Button>
         </Link>
       </div>
     </div>
