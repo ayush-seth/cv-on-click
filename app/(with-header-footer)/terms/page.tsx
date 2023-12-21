@@ -14,11 +14,11 @@ export default function Terms() {
         <div className="space-y-6">
           <TypographyH2>1. Acceptance of Terms:</TypographyH2>
           <TypographyP>
-            By utilizing the services provided by COC Career Services Private
-            Limited,, hereinafter referred to as &quot;the Company,&quot; you
-            acknowledge and agree to abide by the terms and conditions outlined
-            in this document. These terms constitute a legally binding agreement
-            between you and the Company.
+            By utilizing the services provided by CVONCALL Career Services
+            Private Limited (&quot;COC&quot;), hereinafter referred to as
+            &quot;the Company,&quot; you acknowledge and agree to abide by the
+            terms and conditions outlined in this document. These terms
+            constitute a legally binding agreement between you and the Company.
           </TypographyP>
         </div>
         <div className="space-y-6">
@@ -42,7 +42,7 @@ export default function Terms() {
             access to your account.
           </TypographyP>
           <TypographyP>
-            <strong>C.</strong> You must ensure a good internet speed (ideally,
+            <strong>c.</strong> You must ensure a good internet speed (ideally,
             10 to 15 MBps) while you apply for CV generation in order to get the
             technology to work effectively.
           </TypographyP>

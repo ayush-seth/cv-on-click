@@ -30,10 +30,10 @@ export default function ContactUs() {
             </Typography>
           </div>
           <div>
-            <Typography className="text-xl">Our address</Typography>
+            <Typography className="text-xl">Communication address</Typography>
             <Typography className="mt-2 text-sm">
-              COC Career Services Private Limited, HD-171, WeWork Pavilion,
-              62/63 The Pavilion, Church Street, Bangalore, Karnataka 560001
+              HD-171, WeWork Pavilion, 62/63 The Pavilion, Church Street,
+              Bangalore, Karnataka 560001
             </Typography>
           </div>
         </div>
