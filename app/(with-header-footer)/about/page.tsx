@@ -94,7 +94,7 @@ export default function About() {
           <TypographyP>
             Join us on a journey where your career aspirations meet our
             expertise, and let us help you stand out in a competitive job
-            market. Your success story begins with a powerful CV from CV.
+            market. Your success story begins with a powerful CV from COC.
           </TypographyP>
         </div>
       </div>
