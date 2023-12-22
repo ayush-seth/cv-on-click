@@ -19,13 +19,13 @@ export default function ContactUs() {
           <TypographyH2>Let&apos;s Connect</TypographyH2>
           <div>
             <Typography className="text-xl">Talk to our team</Typography>
-            <Typography className="text-sm">
+            <Typography className="text-sm underline">
               <a href="mailto:support@yourcoc.com">support@yourcoc.com</a>
             </Typography>
           </div>
           <div>
             <Typography className="text-xl">Our contact details</Typography>
-            <Typography className="text-sm">
+            <Typography className="text-sm underline">
               <a href="tel:support@yourcoc.com">+91 9129000537</a>
             </Typography>
           </div>

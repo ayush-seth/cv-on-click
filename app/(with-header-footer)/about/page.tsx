@@ -67,7 +67,11 @@ export default function About() {
       </div>
 
       <div className="mt-10 lg:mt-40 lg:flex lg:justify-between">
-        <Image src={rightSolutionImg} alt="" className="order-1 max-w-xl" />
+        <Image
+          src={rightSolutionImg}
+          alt=""
+          className="order-1 w-full max-w-xl"
+        />
         <div className="mt-10 max-w-xl space-y-8">
           <TypographyH2 className="font-normal lg:font-normal">
             Delivering the <span className="font-bold">right solution?</span>
