@@ -1,5 +1,5 @@
 import Image from "next/image";
-import newResumeImg from "./new/new-resume.png";
+import newResumeImg from "./new-resume.png";
 
 export default function ResumeLayout({
   children,
