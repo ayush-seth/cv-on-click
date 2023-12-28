@@ -11,7 +11,7 @@ import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import loginHero from "./login.png";
 
-export const BASE_URL = "https://api.yourcoc.com/api";
+const BASE_URL = "https://api.yourcoc.com/api";
 
 type Screen = "phone" | "password";
 type Form = {
